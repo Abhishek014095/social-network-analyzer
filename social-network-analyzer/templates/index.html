@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Social Network Analyzer | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
+    <meta content="Techzaa" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/default/logo.png">
+
+    <!-- App css -->
+    <link href="http://127.0.0.1:8000/backend/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+    <!-- Icons css -->
+    <link href="http://127.0.0.1:8000/backend/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/backend/css/style.css">
+
+    </head>
+
+<body class="authentication-bg position-relative">
+    <div class="account-pages position-relative">
+        <div class="container">
+            <!-- <div class="row">
+    <div class="col">
+        <a href="#" title="logo" class="header-logo">
+            <img src="http://127.0.0.1:8000/default/logo.png" alt="logo">
+        </a>
+    </div>
+</div> -->
+<div class="l_content">
+    <div class="container px-0">
+        <div class="row items-center">
+            <div class="col-xl-7 col-lg-6 d-none d-lg-block">
+                <!-- <img src="http://127.0.0.1:8000/backend/images/signin-up-img.webp" alt="" class="img-fluid"> -->
+                <img src="http://127.0.0.1:8000/backend/images/login-img.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <div class="log-register-block">
+                   <div class="text-center mb-4">
+                    <a href="#" title="logo" class="header-logo">
+                            <img src="http://127.0.0.1:8000/default/logo.png" alt="logo">
+                        </a>
+                   </div>
+                    <h2 class="text-center">Login</h2>
+                    <p class="text-center">Welcome to Social Network Analyzer!{{name}}</p>
+                    <form method="POST" action="/login">
+                        <input type="hidden" name="_token" value="nTx4MAUAzRo7foGY8Qx6cnSOddixlX1i9ovboga5" autocomplete="off">                        <div class="form-group">
+                            <label for="emailaddress" class="form-label">Email</label>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email" value="" tabindex="1"   autofocus>
+                                                    </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group input-group-merge">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" tabindex="2">
+                                <div class="input-group-text toggle-password show-password" data-password="false">
+                                    <span class="password-eye"></span>
+                                </div>
+                            </div>
+
+                                                    </div>
+                        <div class="form-group d-flex justify-content-between flex-wrap">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                                <label class="form-check-label" for="checkbox-signin">Remember me</label>
+                            </div>
+
+                        </div>
+                        <div class="text-start btn-block">
+                            <button class="btn btn-soft-primary w-100" type="submit">
+                                Login                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end page -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: "btn btn-success",
+            cancelButton: "btn btn-danger"
+        },
+        buttonsStyling: false
+    });
+
+
+
+
+
+
+    function toasterAlert(status, message) {
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            // showCancelButton :true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+
+        Toast.fire({
+            icon: status,
+            title: message
+        });
+
+    }
+
+    function fireSuccessSwal(title,message){
+        Swal.fire({
+            title: title,
+            text: message,
+            type: "success",
+            icon: "success",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+
+    function fireWarningSwal(title,message){
+    Swal.fire({
+            title: title,
+            text: message,
+            type: "warning",
+            icon: "warning",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+
+    function fireErrorSwal(title,message){
+        Swal.fire({
+            title: title,
+            text: message,
+            type: "error",
+            icon: "error",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+</script>
+
+<script>
+
+    // Password field hide/show functiolity
+    $(document).on('click', '.toggle-password', function () {
+          var passwordInput = $(this).prev('input');
+          console.log(passwordInput);
+          if (passwordInput.attr('type') === 'password') {
+              passwordInput.attr('type', 'text');
+              $(this).removeClass('show-password');
+          } else {
+              passwordInput.attr('type', 'password');
+              $(this).addClass('show-password');
+          }
+    });
+
+</script>
+</body>
+</html>

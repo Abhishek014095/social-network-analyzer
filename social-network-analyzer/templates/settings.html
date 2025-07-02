@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Social Network Analyzer | Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
+    <meta content="HIPL" name="author" />
+    <meta content="xSEAmq6EdUO2hPWrz8xbDdvIFSLJC8xptKt5dRa4" name="csrf-token" />
+
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/default/logo.png">
+
+    <!-- App css -->
+<link href="http://127.0.0.1:8000/backend/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+<!-- Icons css -->
+<link href="http://127.0.0.1:8000/backend/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Theme Config Js -->
+<script src="http://127.0.0.1:8000/backend/js/config.js"></script>
+
+<!-- Main css -->
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/backend/css/style.css">
+        <!-- dropify css -->
+    <link href="http://127.0.0.1:8000/backend/vendor/dropify/dropify.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .tab-container .tab-content .tab-item.hide{
+            display: none;
+        }
+        .form-group{
+            margin: 0px;
+        }
+        .card-footer {
+            border-top: 1px solid #f5f5f5;
+            background-color: transparent;
+        }
+        label .btn  {
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+	<div class="loader-div" style="display: none;"><div><img src="http://127.0.0.1:8000/default/page-loader.gif" width="100"></div></div>
+
+    <!-- Begin page -->
+    <div class="wrapper">
+    
+        <!-- ========== Topbar Start ========== -->
+        <div class="navbar-custom">
+    <div class="topbar container-fluid">
+        <div class="d-flex align-items-center gap-1">
+
+            <!-- Topbar Brand Logo -->
+            <div class="logo-topbar">
+                <!-- Logo light -->
+                <a href="http://127.0.0.1:8000/dashboard" class="logo-light">
+                    <span class="logo-lg">
+                        <img src="http://127.0.0.1:8000/default/logo.png" alt="logo">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="http://127.0.0.1:8000/default/logo.png" alt="small logo">
+                    </span>
+                </a>
+            </div>
+
+            <!-- Sidebar Menu Toggle Button -->
+            <button class="button-toggle-menu">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <!-- Horizontal Menu Toggle Button -->
+            <button class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+           
+        </div>
+
+        <ul class="topbar-menu d-flex align-items-center gap-3">
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle arrow-none nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="false" aria-expanded="false">
+                    <span class="account-user-avatar">
+                                                <img src="http://127.0.0.1:8000/default/user-icon.svg" alt="user-image" width="32" class="rounded-circle user-profile-img">
+                                            </span>
+                    <span class="d-lg-block d-none">
+                        <h5 class="my-0 fw-normal user_profile">
+                            <span class="user-profile-name">Super Admin</span> 
+                            <i class="ri-arrow-down-s-line d-none d-sm-inline-block align-middle"></i>
+                        </h5>
+                    </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown">
+                    <!-- item-->
+                    <div class=" dropdown-header noti-title">
+                        <h6 class="text-overflow m-0">Welcome !</h6>
+                    </div>
+
+                    <!-- item-->
+                    <a href="http://127.0.0.1:8000/profile" class="dropdown-item">
+                        <i class="ri-account-circle-line fs-18 align-middle me-1"></i>
+                        <span>Profile</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="http://127.0.0.1:8000/logout" class="dropdown-item">
+                        <i class="ri-logout-box-line fs-18 align-middle me-1"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>        <!-- ========== Topbar End ========== -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="leftside-menu">
+
+    <!-- Brand Logo Light -->
+    <a href="http://127.0.0.1:8000/dashboard" class="logo logo-light">
+        <span class="logo-lg">
+            <img src="http://127.0.0.1:8000/default/logo.png" alt="logo">
+        </span>
+        <span class="logo-sm">
+            <img src="http://127.0.0.1:8000/default/logo.png" alt="small logo">
+        </span>
+    </a>
+
+    <!-- Brand Logo Dark -->
+    <a href="javascript::void(0);" class="logo logo-dark">
+        <span class="logo-lg">
+            <img src="http://127.0.0.1:8000/default/logo.png" alt="dark logo">
+        </span>
+        <span class="logo-sm">
+            <img src="http://127.0.0.1:8000/default/logo.png" alt="small logo">
+        </span>
+    </a>
+
+    <!-- Sidebar -left -->
+    <div class="h-100" id="leftside-menu-container" data-simplebar>
+        <!--- Sidemenu -->
+        <ul class="side-nav">
+
+            
+            <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/dashboard" class="side-nav-link ">
+                    <i class="ri-dashboard-3-line"></i>
+                    <span> Dashboard </span>
+                </a>
+            </li>
+
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/users" class="side-nav-link ">
+                    <i class=" ri-user-line"></i>
+                    <span> Users </span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/queries" class="side-nav-link ">
+                    <i class=" ri-mail-line"></i>
+                    <span> Queries </span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/user-ratings" class="side-nav-link ">
+                    <i class=" ri-shield-star-line"></i>
+                    <span> Reviews and Ratings </span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/announcements" class="side-nav-link ">
+                    <i class="ri-megaphone-line"></i>
+                    <span> Announcements</span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/subscription-packages" class="side-nav-link ">
+                    <i class="ri-vip-crown-2-line"></i>
+                    <span> Subscription Packages </span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item ">
+                <a href="http://127.0.0.1:8000/subscription-histories" class="side-nav-link ">
+                    <i class="ri-history-line"></i>
+                    <span> Subscription History </span>
+                </a>
+            </li>
+            
+            
+                        <li class="side-nav-item menuitem-active">
+                <a href="http://127.0.0.1:8000/settings" class="side-nav-link ">
+                    <i class="ri-settings-3-line"></i>
+                    <span> Settings </span>
+                </a>
+            </li>
+                       
+                    </ul>
+        <!--- End Sidemenu -->
+
+        <div class="clearfix"></div>
+    </div>
+</div>        <!-- ========== Left Sidebar End ========== -->
+
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page pt-2">
+            <div class="content">
+                <!-- Start Content-->
+                <div class="container-fluid">
+                        <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0">Settings</h4>
+                </div>
+                <div class="tab-container">
+                    <nav class="tab-nav">
+                        <ul class="nav nav-underline nav-justified gap-0">
+                            <li class="nav-item"><button class="nav-link setting-tab active" id="site-setting">Site</button></li>
+                            <li class="nav-item"><button class="nav-link setting-tab" id="support-setting">Support</button></li>
+                        </ul>
+                    </nav>
+                    <div class="tab-content p-sm-4 p-3">
+                        <div class="tab-item" data-id="site-setting">
+                            <h3>Site Setting</h3>
+                            <form class="msg-form" id="siteSettingform" enctype="multipart/form-data">
+                                <input type="hidden" name="_token" value="xSEAmq6EdUO2hPWrz8xbDdvIFSLJC8xptKt5dRa4" autocomplete="off">                                <input type="hidden" name="setting_type" value="site">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="row">
+                                                                                                                                    <div class="mb-3 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Site Title <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" value="Social Network Analyzer" name="site_title" required/>
+                                                    </div>
+                                                </div>
+                                                                            
+                                                                                        
+                                                                                                                                                                
+                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Site Logo </label>
+                                                        <input name="site_logo" type="file" class="dropify" id="image-input-site_logo" data-default-file=" http://127.0.0.1:8000/default/logo.png"  data-show-loader="true" data-errors-position="outside" data-allowed-file-extensions="jpeg png jpg PNG JPG" accept="image/jpeg, image/png, image/jpg, image/PNG, image/JPG" />
+                                                    </div>
+                                                </div>
+                                                                                        
+                                                                                                                                                                
+                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Favicon Icon </label>
+                                                        <input name="favicon" type="file" class="dropify" id="image-input-favicon" data-default-file=" http://127.0.0.1:8000/default/logo.png"  data-show-loader="true" data-errors-position="outside" data-allowed-file-extensions="jpeg png jpg PNG JPG" accept="image/jpeg, image/png, image/jpg, image/PNG, image/JPG" />
+                                                    </div>
+                                                </div>
+                                                                                        
+                                                                                                                                                                
+                                                                                        
+                                                                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label w-100"> Terms And Condition 
+                                                            <a href="http://127.0.0.1:8000/default/terms-and-conditions.pdf" title="Preview Terms And Condition PDF" target="_blank" class="btn btn-dark btn-sm float-end me-2"> <i class="ri-eye-fill"></i> </a>
+                                                        </label>
+                                                        <input name="terms_condition" type="file" class="dropify" id="image-input-terms_condition" data-default-file="http://127.0.0.1:8000/default/terms-and-conditions.pdf"  data-show-loader="true" data-errors-position="outside" data-allowed-file-extensions="pdf" accept=".pdf" />
+                                                    </div>                    
+                                                </div>
+                                                                                                                                                                
+                                                                                        
+                                                                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label w-100"> Privacy Policy 
+                                                            <a href="http://127.0.0.1:8000/default/privacy-policy.pdf" title="Preview Privacy Policy PDF" target="_blank" class="btn btn-dark btn-sm float-end me-2"> <i class="ri-eye-fill"></i> </a>
+                                                        </label>
+                                                        <input name="privacy_policy" type="file" class="dropify" id="image-input-privacy_policy" data-default-file="http://127.0.0.1:8000/default/privacy-policy.pdf"  data-show-loader="true" data-errors-position="outside" data-allowed-file-extensions="pdf" accept=".pdf" />
+                                                    </div>                    
+                                                </div>
+                                                                                                                        </div>
+                                </div>
+                                <div class="card-footer rounded-0 px-0 pb-0">
+                                    <div class="form-label justify-content-center m-0 text-end">
+                                        <button type="submit" class="btn btn-success submitBtn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-item hide" data-id="support-setting">
+                            <h3>Support Setting</h3>
+                            <form class="msg-form" id="supportSettingform" enctype="multipart/form-data">
+                                <input type="hidden" name="_token" value="xSEAmq6EdUO2hPWrz8xbDdvIFSLJC8xptKt5dRa4" autocomplete="off">                                <input type="hidden" name="setting_type" value="support">
+                                <div class="card-body px-0 pb-0">
+                                    <div class="row">
+                                                                        
+                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Contact Name <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" value="Socail Network Analyzer Support" name="support_name" required/>
+                                                    </div>
+                                                </div>
+                                                                            
+                                             
+                                                                        
+                                                                            
+                                                                                            <div class="mb-3 col-sm-6 col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Contact Email <span class="required">*</span></label>
+                                                        <input type="email" class="form-control" value="support@gmail.com" name="support_email" required/>
+                                                    </div>
+                                                </div>
+                                             
+                                                                                 
+                                    </div>
+                                </div>
+                                <div class="card-footer rounded-0 px-0 pb-0">
+                                    <div class="form-label justify-content-center m-0 text-end">
+                                        <button type="submit" class="btn btn-success submitBtn">Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+                <!-- container -->
+            </div>
+             <!-- content -->
+
+            <!-- Footer Start -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                2025 © <b>Social Network Analyzer</b>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end Footer -->        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+	<div class="popup_render_div"></div>
+	
+    <!-- Vendor js -->
+<script src="http://127.0.0.1:8000/backend/js/vendor.min.js"></script>
+
+<!-- App js -->
+<script src="http://127.0.0.1:8000/backend/js/app.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: "btn btn-success",
+            cancelButton: "btn btn-danger"
+        },
+        buttonsStyling: false
+    });
+    
+    
+    
+    
+    
+        
+    function toasterAlert(status, message) {
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            // showCancelButton :true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+
+        Toast.fire({
+            icon: status,
+            title: message
+        });
+
+    }
+
+    function fireSuccessSwal(title,message){
+        Swal.fire({
+            title: title, 
+            text: message, 
+            type: "success",
+            icon: "success",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+
+    function fireWarningSwal(title,message){
+    Swal.fire({
+            title: title, 
+            text: message, 
+            type: "warning",
+            icon: "warning",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+
+    function fireErrorSwal(title,message){
+        Swal.fire({
+            title: title, 
+            text: message, 
+            type: "error",
+            icon: "error",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#04a9f5"
+        });
+    }
+</script>
+	<!-- dropify Js -->
+<script src="http://127.0.0.1:8000/backend/vendor/dropify/dropify.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('.dropify').dropify();
+    $('.dropify-errors-container').remove();
+    $('.dropify-wrapper').find('.dropify-clear').hide();
+
+    $(document).on('submit', '#siteSettingform, #supportSettingform', function(e){
+        e.preventDefault();
+        $('.loader-div').show();
+        $(".submitBtn").attr('disabled', true);
+
+        $('.validation-error-block').remove();
+
+        var formData = new FormData(this);
+
+        $.ajax({
+            type: 'post',
+            url: "http://127.0.0.1:8000/update-settings",
+            dataType: 'json',
+            contentType: false,
+            processData: false,
+            data: formData,
+            success: function (response) {
+                if(response.success) {
+                    toasterAlert('success',response.message);
+                    window.location.reload();
+                }
+            },
+            error: function (response) {
+                console.log(response);
+                if(response.responseJSON.error_type == 'something_error'){
+                    toasterAlert('error',response.responseJSON.error);
+                } else {
+                    var errorLabelTitle = '';
+                    $.each(response.responseJSON.errors, function (key, item) {
+                        errorLabelTitle = '<span class="validation-error-block">'+item[0]+'</sapn>';
+
+                        $(errorLabelTitle).insertAfter("input[name='"+key+"']");
+                    });
+                }
+            },
+            complete: function(res){
+                $(".submitBtn").attr('disabled', false);
+                $('.loader-div').hide();
+            }
+        });
+    });
+
+    $(document).on('click', '.setting-tab', function(e){
+        e.preventDefault();
+
+        var tab_id = $(this).attr('id');
+
+        $('.setting-tab').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tab-item').addClass('hide');
+        $('.tab-item[data-id="'+tab_id+'"]').removeClass('hide');
+    });
+});
+</script>
+</body>
+</html>
