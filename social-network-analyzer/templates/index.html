@@ -8,16 +8,16 @@
     <meta content="Techzaa" name="author" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="http://127.0.0.1:8000/default/logo.png">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/logo.png')}}">
 
     <!-- App css -->
-    <link href="http://127.0.0.1:8000/backend/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="{{url_for('static',filename='css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
 
     <!-- Icons css -->
-    <link href="http://127.0.0.1:8000/backend/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{url_for('static',filename='css/icons.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- Main css -->
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/backend/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
 
     </head>
 
@@ -36,19 +36,20 @@
         <div class="row items-center">
             <div class="col-xl-7 col-lg-6 d-none d-lg-block">
                 <!-- <img src="http://127.0.0.1:8000/backend/images/signin-up-img.webp" alt="" class="img-fluid"> -->
-                <img src="http://127.0.0.1:8000/backend/images/login-img.svg" alt="" class="img-fluid">
+                <img src="{{url_for('static',filename='images/login-img.svg')}}" alt="" class="img-fluid">
             </div>
             <div class="col-xl-5 col-lg-6">
                 <div class="log-register-block">
                    <div class="text-center mb-4">
                     <a href="#" title="logo" class="header-logo">
-                            <img src="http://127.0.0.1:8000/default/logo.png" alt="logo">
+                            <img src="{{url_for('static',filename='images/logo.png')}}" alt="logo">
                         </a>
                    </div>
                     <h2 class="text-center">Login</h2>
-                    <p class="text-center">Welcome to Social Network Analyzer!{{name}}</p>
+                    <p class="text-center">Welcome to Social Network Analyzer!</p>
                     <form method="POST" action="/login">
-                        <input type="hidden" name="_token" value="nTx4MAUAzRo7foGY8Qx6cnSOddixlX1i9ovboga5" autocomplete="off">                        <div class="form-group">
+                        <input type="hidden" name="_token" value="nTx4MAUAzRo7foGY8Qx6cnSOddixlX1i9ovboga5" autocomplete="off">                        
+                        <div class="form-group">
                             <label for="emailaddress" class="form-label">Email</label>
                             <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email" value="" tabindex="1"   autofocus>
                                                     </div>
@@ -70,8 +71,7 @@
 
                         </div>
                         <div class="text-start btn-block">
-                            <button class="btn btn-soft-primary w-100" type="submit">
-                                Login                            </button>
+                            <button class="btn btn-soft-primary w-100" type="submit"> Login </button>
                         </div>
                     </form>
                 </div>
@@ -87,9 +87,9 @@
     <!-- end page -->
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{url_for('static',filename='https://code.jquery.com/jquery-3.6.0.min.js')}}"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{url_for('static',filename='https://cdn.jsdelivr.net/npm/sweetalert2@11')}}"></script>
 <script>
 
 const swalWithBootstrapButtons = Swal.mixin({
